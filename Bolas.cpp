@@ -15,17 +15,16 @@ int main() {
   }
 
   map<int, int> m;
-
   lfi(i, B)
    ++m[i];
 
-  int mx = 0, sizeB = len(B);
+  int mx = 0;
 
-  lf(i, 0, sizeB)
+  lf(i, 0, 8)
    if(mx < m[B[i]])
       mx = m[B[i]];
 
-  if (mx > (sizeB + 1) / 2)
+  if (mx > (8 + 1) / 2)
     cout << "N" << endl;
   else
     cout << "S" << endl;
